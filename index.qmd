@@ -2,6 +2,4 @@
 title: "Mojtaba Masoudinejad"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Mojtaba Masoudinejad is a senior Machine Learning Engineer at Bosch Center for Artificial Intelligence (BCAI) at Robert Bosch GmbH.
