@@ -1,5 +1,18 @@
 ---
 title: "Mojtaba Masoudinejad"
+image: images/headshot.jpg
+toc: false
+about: 
+  template: trestles
+  image-shape: round
+  image-width: 20em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/mojtaba-masoudinejad/
+    - text: GitHub
+      href: https://github.com/masoudinejad
+    - text: Email
+      href: mailto:masoudinejad@gmail.com
 ---
 
 Mojtaba Masoudinejad is a senior Machine Learning Engineer at Bosch Center for Artificial Intelligence (BCAI) at Robert Bosch GmbH.
