@@ -2,8 +2,37 @@
 title: "About"
 ---
 
-About this site
+# Education
 
-```{r}
-1 + 1
-```
+- PhD | 2020
+  - TU Dortmund University, Dortmund, Germany
+  - Dissertation: Modeling energy supply unit of ultra-low power devices with indoor photovoltaic harvesting
+  - Supervisors: Prof. Michael ten Hompel, Prof. Luca Benini
+
+- MSc | 2011
+  - Automation and Robotics, TU Dortmund University, Dortmund, Germany
+  - Thesis topic: Optimization of the shuttle robots management in a SABIC high rise warehouse
+  - Supervisors: Prof. Michael ten Hompel, Ekkehard Hornung, Dr. Sascha Feldhorst
+
+- BSc | 2007
+  - Electrical Engineering, Khaje Nasir Toosi University of Technology (KNTU), Tehran, Iran
+  - Thesis topic: Design and implementation of Brain Emotional Learning Based Intelligent Controller (BELBIC) for a level pilot plant
+  - Supervisors: Dr. AliReza Fatehi, Prof. Caro Lucas
+
+# Researcher positions
+
+- Scientific researcher | 2019-2020 
+  - TU Dortmund University, ML2R - The Competence Center Machine Learning Rhine-Ruhr
+- Research associate | 2012-2018 
+  - TU Dortmund University, Chair of materials handling and warehousing (FLW)
+- Guest researcher | Nov.-Dec. 2016 and Nov.-Dec. 2017 
+  - Institute of Integrated Systems (IIS), ETH Zurich, 
+
+
+# Fields of interest
+
+- Machine learning and AI
+- Cyber-Physical systems
+- Energy harvesting
+- Photovoltaic energy
+- Computer vision and image processing
