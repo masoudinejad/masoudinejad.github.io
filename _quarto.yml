@@ -14,7 +14,15 @@ website:
       - href: about.qmd
       - href: publications.qmd
         text: Publications
-
+    right:
+      - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
+        href: "mailto:masoudinejad@gmail.com"
+      - text: "{{< iconify bi github size=1.1em title='GitHub' >}}"
+        href: https://github.com/masoudinejad
+        rel: me
+      - text: "{{< iconify bi linkedin size=1.1em title='LinkedIn' >}}"
+        href: https://www.linkedin.com/in/mojtaba-masoudinejad/
+        rel: me
 format:
   html:
     theme: 
