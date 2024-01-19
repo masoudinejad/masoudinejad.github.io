@@ -9,7 +9,8 @@ about:
   image-width: 12em
 ---
 
-Greetings and thank you for visiting my personal webpage. 
+Greetings and thank you for visiting my personal webpage.
+
 I'm Mojtaba Masoudinejad (Farsi: مجتبی مسعودی نژاد), sometimes friends and colleagues call me Moji (😄 without an E). 
 Originally hailing from the charming city of [Dezfool/Dezful](https://en.wikipedia.org/wiki/Dezful) in southwest Iran, I've embarked on a journey that's taken me all the way to Germany.
 
