@@ -1,22 +1,13 @@
 ---
 title: "Mojtaba Masoudinejad"
+format: html
 image: images/headshot.jpg
 toc: false
 about: 
-  template: trestles
+  template: jolla
   image-shape: round
   image-width: 12em
-  links:
-    - icon: envelope-at-fill
-      href: mailto:masoudinejad@gmail.com
-    - icon: linkedin
-      href: https://www.linkedin.com/in/mojtaba-masoudinejad/
-    - icon: github
-      href: https://github.com/masoudinejad
 ---
-
-# Wellcome
-
 
 Greetings and thank you for visiting my personal webpage. 
 I'm Mojtaba Masoudinejad (Farsi: مجتبی مسعودی نژاد), sometimes friends and colleagues call me Moji (😄 without an E). 
