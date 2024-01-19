@@ -5,7 +5,7 @@ toc: false
 about: 
   template: trestles
   image-shape: round
-  image-width: 20em
+  image-width: 12em
   links:
     - icon: envelope-at-fill
       href: mailto:masoudinejad@gmail.com
@@ -19,4 +19,5 @@ about:
 
 Thank you for visiting my personal webpage.
 
-I am Mojtaba Masoudinejad (Farsi: مجتبی مسعودی نژاد); a researcher originally from [Dezfool/Dezful](https://en.wikipedia.org/wiki/Dezful) in southwest [Iran](https://en.wikipedia.org/wiki/Iran), living in [Germany](https://en.wikipedia.org/wiki/Germany). Currently I am working as a senior Machine Learning Engineer for [Bosch Center for Artificial Intelligence](https://www.bosch-ai.com) at [Robert Bosch GmbH](https://www.bosch.com/).
+I am Mojtaba Masoudinejad (Farsi: مجتبی مسعودی نژاد); a researcher originally from [Dezfool/Dezful](https://en.wikipedia.org/wiki/Dezful) in southwest [Iran](https://en.wikipedia.org/wiki/Iran), living in [Germany](https://en.wikipedia.org/wiki/Germany). 
+Currently I am working as a senior Machine Learning Engineer for [Bosch Center for Artificial Intelligence](https://www.bosch-ai.com) at [Robert Bosch GmbH](https://www.bosch.com/).
