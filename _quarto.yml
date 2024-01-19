@@ -4,12 +4,16 @@ project:
 
 website:
   title: "Personal Page of Mojtaba Masoudinejad"
+  description: "Mojtaba Masoudinejad is a senior machine learning engineer at the Bosch center for Artificial Intelligence (BCAI)"
+  site-url: "https://www.masoudinejad.xyz"
+  repo-url: "https://github.com/masoudinejad/masoudinejad.github.io"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - publications.qmd
+      - href: about.qmd
+      - href: publications.qmd
+        text: Publications
 
 format:
   html:
