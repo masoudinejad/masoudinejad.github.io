@@ -17,7 +17,14 @@ about:
 
 # Wellcome
 
-Thank you for visiting my personal webpage.
 
-I am Mojtaba Masoudinejad (Farsi: مجتبی مسعودی نژاد); a researcher originally from [Dezfool/Dezful](https://en.wikipedia.org/wiki/Dezful) in southwest [Iran](https://en.wikipedia.org/wiki/Iran), living in [Germany](https://en.wikipedia.org/wiki/Germany). 
-Currently I am working as a senior Machine Learning Engineer for [Bosch Center for Artificial Intelligence](https://www.bosch-ai.com) at [Robert Bosch GmbH](https://www.bosch.com/).
+Greetings and thank you for visiting my personal webpage. 
+I'm Mojtaba Masoudinejad (Farsi: مجتبی مسعودی نژاد), sometimes friends and colleagues call me Moji (😄 without an E). 
+Originally hailing from the charming city of [Dezfool/Dezful](https://en.wikipedia.org/wiki/Dezful) in southwest Iran, I've embarked on a journey that's taken me all the way to Germany.
+
+Since the beginning of 2023 I have a role as a senior Machine Learning Engineer at the [Bosch Center for Artificial Intelligence](https://www.bosch-ai.com) in Renningen, a part of the esteemed [Robert Bosch GmbH](https://www.bosch.com/).
+Before my tenure at Bosch, I dedicated two years as a PostDoc researcher in the [DAES](https://ls12-www.cs.tu-dortmund.de/daes/de.html) team at [TU Dortmund University](https://www.tu-dortmund.de/). 
+
+In July 2020, I successfully defended my PhD thesis, ending a long journey exploring the nuanced topic of "[Modeling Energy Supply Unit of Ultra-low Power Devices with Indoor Photovoltaic Energy Harvesting](http://dx.doi.org/10.17877/DE290R-21657)". 
+This significant milestone was achieved under the collaborative guidance of [Prof. Michael ten Hompel](https://flw.mb.tu-dortmund.de/ueber-uns/mitarbeiter/michael-ten-hompel/) and [Prof. Luca Benini](https://ee.ethz.ch/the-department/people-a-z/person-detail.html?persid=194234), within the framework of the [Collaborative Research Center SFB 876](https://sfb876.tu-dortmund.de/index.html), in collaboration with [Fraunhofer IML](https://www.iml.fraunhofer.de/) in Dortmund, Germany.
+My academic journey commenced with an MSc in [Automation and Robotics](https://etit.tu-dortmund.de/studium-und-lehre/studiengaenge/master-automation-and-robotics/) also from [TU Dortmund University](https://www.tu-dortmund.de/) in 2011, following a BSc in Electrical Engineering with a major in Control and Systems Engineering from [Khaje Nasir Toosi University of Technology](https://en.kntu.ac.ir), Tehran, Iran, in 2007.
