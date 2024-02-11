@@ -33,8 +33,8 @@ website:
 format:
   html:
     theme: 
-      light: [flatly, theme_light.scss]
-      dark: [darkly, theme_dark.scss]
+      light: [flatly, themes/theme_light.scss]
+      dark: [darkly, themes/theme_dark.scss]
     css: styles.css
     toc: true
     page-layout: full
