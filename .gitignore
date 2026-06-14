@@ -1,3 +1,9 @@
 /.quarto/
 .Rproj.user
-.DS_Store
+**/.DS_Store
+.image-slots.state.json
+.thumbnail
+screenshots/
+_ds/konar-design-system-*/
+site/Tweaks.jsx
+site/tweaks-panel.jsx

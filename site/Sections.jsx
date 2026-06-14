@@ -34,7 +34,7 @@ function Hero() {
         <div className="pf-hero-aside">
           <div className="pf-portrait-wrap">
             <image-slot id="headshot" class="pf-headshot" shape="rounded" radius="20"
-              placeholder="Drop your headshot"></image-slot>
+              src="uploads/headshot.webp" placeholder="Drop your headshot"></image-slot>
           </div>
           <aside className="pf-now-card">
             <div className="pf-now-head"><span className="pf-now-dot"></span> {t('now.heading')}</div>
