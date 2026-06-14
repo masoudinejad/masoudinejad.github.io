@@ -20,27 +20,68 @@ function Brand({ home }) {
 
 // Shared sticky nav. current ∈ 'home' | 'experience' | 'pubs' | 'downloads'
 function SiteNav({ current }) {
-  useLang(); // subscribe to language changes
+  useLang();
   const { Navbar, NavLink, NavLinks, NavSpacer, NavActions, ThemeToggle, Button } = NS_APP;
   const home = current === 'home';
+  const [open, setOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    if (!open) return;
+    const close = () => setOpen(false);
+    document.addEventListener('pointerdown', close);
+    return () => document.removeEventListener('pointerdown', close);
+  }, [open]);
+
   return (
-    <Navbar brand={<Brand home={home} />}>
-      <NavLinks>
-        <NavLink active={home} {...(home ? { href: '#about', onClick: scrollTo('about') } : { href: 'index.html#about' })}>{t('nav.about')}</NavLink>
-        <NavLink href="experience.html" active={current === 'experience'}>{t('nav.experience')}</NavLink>
-        <NavLink href="publications.html" active={current === 'pubs'}>{t('nav.publications')}</NavLink>
-        <NavLink href="downloads.html" active={current === 'downloads'}>{t('nav.downloads')}</NavLink>
-      </NavLinks>
-      <NavSpacer />
-      <NavActions>
-        <LangToggle />
-        <ThemeToggle />
-        <Button size="sm" variant="primary"
-          onClick={home ? scrollTo('contact') : () => { window.location.href = 'index.html#contact'; }}>
-          {t('nav.contact')}
-        </Button>
-      </NavActions>
-    </Navbar>
+    <React.Fragment>
+      <Navbar brand={<Brand home={home} />}>
+        <NavLinks>
+          <NavLink active={home} {...(home ? { href: '#about', onClick: scrollTo('about') } : { href: 'index.html#about' })}>{t('nav.about')}</NavLink>
+          <NavLink href="experience.html" active={current === 'experience'}>{t('nav.experience')}</NavLink>
+          <NavLink href="publications.html" active={current === 'pubs'}>{t('nav.publications')}</NavLink>
+          <NavLink href="downloads.html" active={current === 'downloads'}>{t('nav.downloads')}</NavLink>
+        </NavLinks>
+        <NavSpacer />
+        <NavActions>
+          <span className="pf-nav-lang"><LangToggle /></span>
+          <ThemeToggle />
+          <span className="pf-nav-contact">
+            <Button size="sm" variant="primary"
+              onClick={home ? scrollTo('contact') : () => { window.location.href = 'index.html#contact'; }}>
+              {t('nav.contact')}
+            </Button>
+          </span>
+          <button
+            className={'pf-hamburger' + (open ? ' is-open' : '')}
+            aria-label="Toggle menu" aria-expanded={open}
+            onPointerDown={(e) => { e.stopPropagation(); setOpen(o => !o); }}>
+            <span /><span /><span />
+          </button>
+        </NavActions>
+      </Navbar>
+      {open && (
+        <nav className="pf-mobile-nav" onPointerDown={(e) => e.stopPropagation()}>
+          <a className={'pf-mobile-link' + (home ? ' is-active' : '')}
+            href={home ? '#about' : 'index.html#about'}
+            onClick={(e) => { if (home) scrollTo('about')(e); setOpen(false); }}>
+            {t('nav.about')}
+          </a>
+          <a className={'pf-mobile-link' + (current === 'experience' ? ' is-active' : '')} href="experience.html">{t('nav.experience')}</a>
+          <a className={'pf-mobile-link' + (current === 'pubs' ? ' is-active' : '')} href="publications.html">{t('nav.publications')}</a>
+          <a className={'pf-mobile-link' + (current === 'downloads' ? ' is-active' : '')} href="downloads.html">{t('nav.downloads')}</a>
+          <div className="pf-mobile-sep" />
+          <a className="pf-mobile-link"
+            href={home ? '#contact' : 'index.html#contact'}
+            onClick={(e) => { if (home) { scrollTo('contact')(e); } setOpen(false); }}>
+            {t('nav.contact')}
+          </a>
+          <div className="pf-mobile-foot">
+            <LangToggle />
+            <ThemeToggle />
+          </div>
+        </nav>
+      )}
+    </React.Fragment>
   );
 }
 

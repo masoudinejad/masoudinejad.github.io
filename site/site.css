@@ -170,6 +170,43 @@ body.tw-hide-badge .pf-portrait-badge { display: none; }
 .pf-footer-top svg { width: 0.9rem; height: 0.9rem; }
 .pf-footer-top:hover { color: var(--accent); }
 
+/* ---- Hamburger button ---- */
+.pf-hamburger {
+  display: none; flex-direction: column; justify-content: center; align-items: center;
+  gap: 5px; width: 36px; height: 36px; padding: 0; flex-shrink: 0;
+  background: none; border: 1px solid var(--border-default);
+  border-radius: var(--radius-md); cursor: pointer; color: var(--text-secondary);
+}
+.pf-hamburger span {
+  display: block; width: 16px; height: 1.5px;
+  background: currentColor; border-radius: 1px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.pf-hamburger.is-open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.pf-hamburger.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.pf-hamburger.is-open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* ---- Mobile nav dropdown ---- */
+.pf-mobile-nav {
+  position: fixed; top: 4rem; left: 0; right: 0; z-index: 200;
+  display: flex; flex-direction: column;
+  background: var(--bg-app);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-2) var(--space-4) var(--space-4);
+}
+.pf-mobile-link {
+  display: block; padding: var(--space-3) var(--space-2);
+  font-size: var(--text-base); font-weight: var(--weight-medium);
+  color: var(--text-secondary); text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: color var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out);
+}
+.pf-mobile-link:hover { color: var(--text-primary); background: var(--bg-subtle); }
+.pf-mobile-link.is-active { color: var(--accent-text); }
+.pf-mobile-sep { height: 1px; background: var(--border-subtle); margin: var(--space-2) 0; }
+.pf-mobile-foot { display: flex; gap: var(--space-3); padding-top: var(--space-3); }
+
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
   .pf-intro-grid { grid-template-columns: 1fr; gap: var(--space-8); }
@@ -178,6 +215,13 @@ body.tw-hide-badge .pf-portrait-badge { display: none; }
   .pf-skills-grid { grid-template-columns: 1fr; }
   .pf-contact-card { grid-template-columns: 1fr; gap: var(--space-8); padding: var(--space-8); }
   .pf-contact-links { width: 100%; max-width: 100%; margin-left: 0; }
+}
+
+@media (max-width: 700px) {
+  .mm-navbar__links, .pf-nav-contact, .pf-nav-lang { display: none; }
+  .pf-hamburger { display: flex; }
+  .pf-hero-grid { grid-template-columns: 1fr; }
+  .pf-hero-aside { margin-left: 0; max-width: 100%; flex-direction: row; align-items: flex-start; flex-wrap: wrap; }
 }
 /* ---- Downloads ---- */
 .dl-main { display: flex; flex-direction: column; gap: var(--space-16); }
