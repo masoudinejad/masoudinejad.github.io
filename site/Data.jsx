@@ -8,7 +8,7 @@ const SOCIAL = {
   orcid: 'https://orcid.org/0000-0002-3627-9387',
   github: 'https://github.com/masoudinejad',
   scholar: 'https://scholar.google.com/citations?user=nb5UK5sAAAAJ&hl=en',
-  linkedin: 'https://www.linkedin.com/in/mojtaba-masoudinejad/',
+  linkedin: 'https://www.linkedin.com/in/masoudinejad/',
 };
 
 const FIELDS = [
