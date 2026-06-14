@@ -1,0 +1,57 @@
+/* ============================================================
+   ELEVATION — radii, borders, shadows, motion
+   Shadows use a warm brown tint via --shadow-color (rgb triplet,
+   set per-theme in colors.css) so depth feels soft, not harsh.
+   ============================================================ */
+
+:root {
+  /* ---- Corner radii (generous = friendly) ---- */
+  --radius-xs:   4px;
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;
+  --radius-xl:   20px;
+  --radius-2xl:  28px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+
+  /* ---- Border widths ---- */
+  --border-thin:  1px;
+  --border-med:   1.5px;
+  --border-thick: 2px;
+
+  /* ---- Soft, cool-tinted shadows ---- */
+  --shadow-xs: 0 1px 2px rgb(var(--shadow-color) / 0.06);
+  --shadow-sm: 0 1px 2px rgb(var(--shadow-color) / 0.06),
+               0 2px 5px rgb(var(--shadow-color) / 0.05);
+  --shadow-md: 0 2px 4px -2px rgb(var(--shadow-color) / 0.06),
+               0 6px 14px -4px rgb(var(--shadow-color) / 0.10);
+  --shadow-lg: 0 4px 8px -4px rgb(var(--shadow-color) / 0.08),
+               0 14px 28px -8px rgb(var(--shadow-color) / 0.14);
+  --shadow-xl: 0 8px 16px -8px rgb(var(--shadow-color) / 0.10),
+               0 28px 56px -12px rgb(var(--shadow-color) / 0.20);
+  --shadow-inset: inset 0 1px 2px rgb(var(--shadow-color) / 0.07);
+
+  /* Focus ring (composed in component code with --accent-ring) */
+  --ring-width: 3px;
+  --ring-offset: 2px;
+
+  /* ---- Motion ---- */
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);   /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);   /* @kind other */
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.5, 1);  /* @kind other */
+
+  --dur-instant: 80ms;   /* @kind other */
+  --dur-fast:    140ms;  /* @kind other */
+  --dur-base:    220ms;  /* @kind other */
+  --dur-slow:    340ms;  /* @kind other */
+
+  /* ---- Z-index scale ---- */
+  --z-base:     0;     /* @kind other */
+  --z-raised:   10;    /* @kind other */
+  --z-sticky:   100;   /* @kind other */
+  --z-overlay:  1000;  /* @kind other */
+  --z-modal:    1100;  /* @kind other */
+  --z-toast:    1200;  /* @kind other */
+  --z-tooltip:  1300;  /* @kind other */
+}

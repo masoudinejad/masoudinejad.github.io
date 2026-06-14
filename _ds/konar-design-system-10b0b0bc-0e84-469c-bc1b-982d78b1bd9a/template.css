@@ -1,0 +1,33 @@
+/* ===== KONAR PPTX TEMPLATE — extra layouts on top of slides.css ===== */
+
+/* CONTENT — title + intro + bullets */
+.sContent .s-pad { justify-content: flex-start; }
+.sContent-head { margin-bottom: 50px; }
+.sContent-head h2 { font-size: 76px; letter-spacing: -0.025em; margin-top: 18px; line-height: 1.02; }
+.sContent-body { display: grid; grid-template-columns: 1.05fr 1fr; gap: 90px; align-items: start; }
+.sContent-body > p { font-size: 32px; line-height: 1.55; color: var(--fg-2); max-width: 30ch; }
+.sBullets { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 30px; }
+.sBullets li { font-size: 30px; color: var(--fg-1); line-height: 1.4; display: flex; gap: 22px; align-items: flex-start; }
+.sBullets li b { color: var(--leaf); font-weight: 600; }
+.sBullets .sB-dot { flex: none; width: 16px; height: 16px; border-radius: 50%; margin-top: 12px; background: var(--leaf); }
+.sBullets li:nth-child(2) .sB-dot { background: var(--amber); }
+.sBullets li:nth-child(3) .sB-dot { background: var(--russet); }
+.sBullets li:nth-child(4) .sB-dot { background: var(--dusk); }
+
+/* STATS — three big figures */
+.sStats-head { margin-bottom: 80px; }
+.sStats-head h2 { font-size: 76px; letter-spacing: -0.025em; margin-top: 18px; }
+.sStats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; flex: 1; align-content: center; }
+.sStat { border-top: 3px solid var(--line-3); padding-top: 36px; display: flex; flex-direction: column; }
+.sStat:nth-child(1) { border-top-color: var(--leaf); }
+.sStat:nth-child(2) { border-top-color: var(--amber); }
+.sStat:nth-child(3) { border-top-color: var(--russet); }
+.sStat-num { font-family: var(--font-display); font-weight: 600; font-size: 128px; line-height: 0.9; letter-spacing: -0.04em; color: var(--fg-1); }
+.sStat:nth-child(1) .sStat-num { color: var(--leaf); }
+.sStat:nth-child(2) .sStat-num { color: var(--amber); }
+.sStat:nth-child(3) .sStat-num { color: var(--russet-bright); }
+.sStat-label { font-size: 28px; color: var(--fg-2); margin-top: 28px; line-height: 1.35; max-width: 16ch; }
+
+/* template caption badge top-right of each slide (subtle layout name) */
+.s-kind { position: absolute; top: 52px; right: 130px; font-family: var(--font-mono); font-size: 18px;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--fg-4); }

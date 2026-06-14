@@ -1,0 +1,294 @@
+{
+  "Courses": {
+    "Coursera 48Z5BDKUC67D": {
+      "course": "Deep Learning with Keras and Tensorflow",
+      "category": "Machine Learning & Deep Learning",
+      "issuer": "IBM",
+      "year": 2022,
+      "date": "Jul 7, 2022",
+      "verify": "https://coursera.org/verify/48Z5BDKUC67D"
+    },
+    "Coursera 8UT57E82J4CX": {
+      "course": "Structuring Machine Learning Projects",
+      "category": "Machine Learning & Deep Learning",
+      "issuer": "DeepLearning.AI",
+      "year": 2022,
+      "date": "Jul 20, 2022",
+      "verify": "https://coursera.org/verify/8UT57E82J4CX"
+    },
+    "Coursera AK8NW5FJM7VE": {
+      "course": "Introduction to Generative AI",
+      "category": "Generative AI",
+      "issuer": "Google",
+      "year": 2025,
+      "date": "Feb 25, 2025",
+      "verify": "https://coursera.org/verify/AK8NW5FJM7VE"
+    },
+    "Coursera CDDN8FGBCFW3": {
+      "course": "Machine Learning with Python",
+      "category": "Machine Learning & Deep Learning",
+      "issuer": "IBM",
+      "year": 2022,
+      "date": "Jul 7, 2022",
+      "verify": "https://coursera.org/verify/CDDN8FGBCFW3"
+    },
+    "Coursera F99AHFBUCM34": {
+      "course": "Troubleshooting and Debugging Techniques",
+      "category": "IT & DevOps",
+      "issuer": "Google",
+      "year": 2022,
+      "date": "Oct 25, 2022",
+      "verify": "https://coursera.org/verify/F99AHFBUCM34"
+    },
+    "Coursera GBDT6X57KUQ7": {
+      "course": "Linear Algebra for Machine Learning and Data Science",
+      "category": "Mathematics",
+      "issuer": "DeepLearning.AI",
+      "year": 2023,
+      "date": "Feb 7, 2023",
+      "verify": "https://coursera.org/verify/GBDT6X57KUQ7"
+    },
+    "Coursera HAX5KPABN9QW": {
+      "course": "Sequence Models",
+      "category": "Machine Learning & Deep Learning",
+      "issuer": "DeepLearning.AI",
+      "year": 2022,
+      "date": "Aug 5, 2022",
+      "verify": "https://coursera.org/verify/HAX5KPABN9QW"
+    },
+    "Coursera HGW7U67G5WY5": {
+      "course": "Introduction to Neural Networks and PyTorch",
+      "category": "Machine Learning & Deep Learning",
+      "issuer": "IBM",
+      "year": 2022,
+      "date": "Jul 7, 2022",
+      "verify": "https://coursera.org/verify/HGW7U67G5WY5"
+    },
+    "Coursera HS2D6T938RRR": {
+      "course": "Crash Course on Python",
+      "category": "Python Programming",
+      "issuer": "Google",
+      "year": 2022,
+      "date": "Sep 21, 2022",
+      "verify": "https://coursera.org/verify/HS2D6T938RRR"
+    },
+    "Coursera I91R18XQX47W": {
+      "course": "PyTorch: Fundamentals",
+      "category": "Machine Learning & Deep Learning",
+      "issuer": "DeepLearning.AI",
+      "year": 2026,
+      "date": "May 19, 2026",
+      "verify": "https://coursera.org/verify/I91R18XQX47W"
+    },
+    "Coursera ILEJNO9X8BYM": {
+      "course": "Responsible AI: Applying AI Principles with Google Cloud",
+      "category": "AI Ethics & Responsible AI",
+      "issuer": "Google",
+      "year": 2025,
+      "date": "Jun 20, 2025",
+      "verify": "https://coursera.org/verify/ILEJNO9X8BYM"
+    },
+    "Coursera J45FMFRMNTF6": {
+      "course": "Introduction to Git and GitHub",
+      "category": "IT & DevOps",
+      "issuer": "Google",
+      "year": 2022,
+      "date": "Sep 20, 2022",
+      "verify": "https://coursera.org/verify/J45FMFRMNTF6"
+    },
+    "Coursera JCCBP8Y4U7U4": {
+      "course": "Natural Language Processing with Classification and Vector Spaces",
+      "category": "NLP",
+      "issuer": "DeepLearning.AI",
+      "year": 2022,
+      "date": "Aug 22, 2022",
+      "verify": "https://coursera.org/verify/JCCBP8Y4U7U4"
+    },
+    "Coursera KXD9AT7115LY": {
+      "course": "Probability & Statistics for Machine Learning & Data Science",
+      "category": "Mathematics",
+      "issuer": "DeepLearning.AI",
+      "year": 2025,
+      "date": "Oct 30, 2025",
+      "verify": "https://coursera.org/verify/KXD9AT7115LY"
+    },
+    "Coursera L45YWG5SGMN8": {
+      "course": "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
+      "category": "Machine Learning & Deep Learning",
+      "issuer": "DeepLearning.AI",
+      "year": 2022,
+      "date": "Jul 19, 2022",
+      "verify": "https://coursera.org/verify/L45YWG5SGMN8"
+    },
+    "Coursera MTHVPRLR7URK": {
+      "course": "Automating Real-World Tasks with Python",
+      "category": "Python Programming",
+      "issuer": "Google",
+      "year": 2022,
+      "date": "Nov 7, 2022",
+      "verify": "https://coursera.org/verify/MTHVPRLR7URK"
+    },
+    "Coursera Q62TXV74S56G": {
+      "course": "Neural Networks and Deep Learning",
+      "category": "Machine Learning & Deep Learning",
+      "issuer": "DeepLearning.AI",
+      "year": 2022,
+      "date": "Jul 15, 2022",
+      "verify": "https://coursera.org/verify/Q62TXV74S56G"
+    },
+    "Coursera QOPJE0W3QAKA": {
+      "course": "Retrieval Augmented Generation (RAG)",
+      "category": "Generative AI",
+      "issuer": "DeepLearning.AI",
+      "year": 2025,
+      "date": "Aug 19, 2025",
+      "verify": "https://coursera.org/verify/QOPJE0W3QAKA"
+    },
+    "Coursera R8SQD82Y42Q7": {
+      "course": "Introduction to Ansible: The Fundamentals",
+      "category": "IT & DevOps",
+      "issuer": "Coursera (Guided Project)",
+      "year": 2023,
+      "date": "Jun 15, 2023",
+      "verify": "https://coursera.org/verify/R8SQD82Y42Q7"
+    },
+    "Coursera RQ9AS5PJR22S": {
+      "course": "Using Python to Interact with the Operating System",
+      "category": "Python Programming",
+      "issuer": "Google",
+      "year": 2022,
+      "date": "Sep 28, 2022",
+      "verify": "https://coursera.org/verify/RQ9AS5PJR22S"
+    },
+    "Coursera SCWUJF9PROAT": {
+      "course": "Introduction to Large Language Models",
+      "category": "Generative AI",
+      "issuer": "Google",
+      "year": 2025,
+      "date": "Feb 25, 2025",
+      "verify": "https://coursera.org/verify/SCWUJF9PROAT"
+    },
+    "Coursera SY5JW54B78EH": {
+      "course": "AI Capstone Project with Deep Learning",
+      "category": "Machine Learning & Deep Learning",
+      "issuer": "IBM",
+      "year": 2022,
+      "date": "Jul 7, 2022",
+      "verify": "https://coursera.org/verify/SY5JW54B78EH"
+    },
+    "Coursera T3242EDX3XF3": {
+      "course": "Convolutional Neural Networks",
+      "category": "Computer Vision",
+      "issuer": "DeepLearning.AI",
+      "year": 2022,
+      "date": "Jul 27, 2022",
+      "verify": "https://coursera.org/verify/T3242EDX3XF3"
+    },
+    "Coursera TG7G2N5C47KA": {
+      "course": "Calculus for Machine Learning and Data Science",
+      "category": "Mathematics",
+      "issuer": "DeepLearning.AI",
+      "year": 2025,
+      "date": "Feb 5, 2025",
+      "verify": "https://coursera.org/verify/TG7G2N5C47KA"
+    },
+    "Coursera TPLN59SBGH7G": {
+      "course": "Configuration Management and the Cloud",
+      "category": "IT & DevOps",
+      "issuer": "Google",
+      "year": 2022,
+      "date": "Nov 5, 2022",
+      "verify": "https://coursera.org/verify/TPLN59SBGH7G"
+    },
+    "Coursera VFVP3RFLT488": {
+      "course": "Transformer Models and BERT Model",
+      "category": "NLP",
+      "issuer": "Google",
+      "year": 2025,
+      "date": "Aug 7, 2025",
+      "verify": "https://coursera.org/verify/VFVP3RFLT488"
+    },
+    "Coursera WJU0HTVTU7FF": {
+      "course": "Machine Learning in Production",
+      "category": "MLOps",
+      "issuer": "DeepLearning.AI",
+      "year": 2024,
+      "date": "Oct 14, 2024",
+      "verify": "https://coursera.org/verify/WJU0HTVTU7FF"
+    },
+    "Coursera XCCRHYP5A374": {
+      "course": "Introduction to Computer Vision and Image Processing",
+      "category": "Computer Vision",
+      "issuer": "IBM",
+      "year": 2022,
+      "date": "Jul 7, 2022",
+      "verify": "https://coursera.org/verify/XCCRHYP5A374"
+    },
+    "Coursera YLGXNI8PA80L": {
+      "course": "Introduction to Responsible AI",
+      "category": "AI Ethics & Responsible AI",
+      "issuer": "Google",
+      "year": 2025,
+      "date": "Feb 26, 2025",
+      "verify": "https://coursera.org/verify/YLGXNI8PA80L"
+    },
+    "Coursera YN8C3564PGYP": {
+      "course": "Generative AI for Everyone",
+      "category": "Generative AI",
+      "issuer": "DeepLearning.AI",
+      "year": 2025,
+      "date": "Oct 31, 2025",
+      "verify": "https://coursera.org/verify/YN8C3564PGYP"
+    },
+    "Coursera ZBFZERWKFG2X": {
+      "course": "Write Basic Ansible Playbooks",
+      "category": "IT & DevOps",
+      "issuer": "Coursera (Guided Project)",
+      "year": 2023,
+      "date": "Jun 15, 2023",
+      "verify": "https://coursera.org/verify/ZBFZERWKFG2X"
+    },
+    "Coursera ZYBHELG8A92E": {
+      "course": "Introduction to Deep Learning & Neural Networks with Keras",
+      "category": "Machine Learning & Deep Learning",
+      "issuer": "IBM",
+      "year": 2022,
+      "date": "Jul 7, 2022",
+      "verify": "https://coursera.org/verify/ZYBHELG8A92E"
+    }
+  },
+  "Specializations": {
+    "Coursera 0DYBAQDABB9S": {
+      "course": "Introduction to Generative AI Learning Path",
+      "type": "Specialization",
+      "issuer": "Google",
+      "year": 2025,
+      "date": "Jun 20, 2025",
+      "verify": "https://coursera.org/verify/specialization/0DYBAQDABB9S"
+    },
+    "Coursera BAKC4HQT7PME": {
+      "course": "Google IT Automation with Python",
+      "type": "Professional Certificate",
+      "issuer": "Google",
+      "year": 2022,
+      "date": "Nov 7, 2022",
+      "verify": "https://coursera.org/verify/professional-cert/BAKC4HQT7PME"
+    },
+    "Coursera LAMXWRLT7XL3": {
+      "course": "Deep Learning",
+      "type": "Specialization",
+      "issuer": "DeepLearning.AI",
+      "year": 2022,
+      "date": "Aug 5, 2022",
+      "verify": "https://coursera.org/verify/specialization/LAMXWRLT7XL3"
+    },
+    "Coursera VUUL9OQKAC23": {
+      "course": "Mathematics for Machine Learning and Data Science",
+      "type": "Specialization",
+      "issuer": "DeepLearning.AI",
+      "year": 2025,
+      "date": "Oct 30, 2025",
+      "verify": "https://coursera.org/verify/specialization/VUUL9OQKAC23"
+    }
+  }
+}

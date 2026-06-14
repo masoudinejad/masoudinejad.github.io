@@ -1,0 +1,107 @@
+/* ============================================================
+   DATA DISPLAY — Card, Badge, Tag, Avatar
+   ============================================================ */
+
+/* ---------- Card ---------- */
+.mm-card {
+  background: var(--surface-card);
+  border: var(--border-thin) solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: clip;
+}
+.mm-card--raised { box-shadow: var(--shadow-md); border-color: transparent; }
+.mm-card--flat   { box-shadow: none; }
+.mm-card--outlined { box-shadow: none; border-color: var(--border-default); }
+.mm-card--interactive { cursor: pointer; transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out); }
+.mm-card--interactive:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); border-color: var(--border-default); }
+.mm-card--interactive:active { transform: translateY(0); box-shadow: var(--shadow-sm); }
+
+.mm-card__media { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--bg-subtle); }
+.mm-card__pad { padding: var(--space-5); }
+.mm-card__header { display: flex; flex-direction: column; gap: var(--space-1); padding: var(--space-5) var(--space-5) 0; }
+.mm-card__title { font-family: var(--font-display); font-size: var(--text-lg); font-weight: var(--weight-semibold); color: var(--text-primary); letter-spacing: var(--tracking-tight); }
+.mm-card__desc { font-size: var(--text-sm); color: var(--text-secondary); line-height: var(--leading-normal); }
+.mm-card__body { padding: var(--space-4) var(--space-5); color: var(--text-secondary); font-size: var(--text-sm); line-height: var(--leading-relaxed); }
+.mm-card__footer { display: flex; align-items: center; gap: var(--space-2); padding: var(--space-4) var(--space-5); border-top: var(--border-thin) solid var(--border-subtle); }
+
+/* ---------- Badge ---------- */
+.mm-badge {
+  display: inline-flex; align-items: center; gap: var(--space-1);
+  height: 1.4rem; padding-inline: var(--space-2);
+  font-size: var(--text-xs); font-weight: var(--weight-semibold);
+  line-height: 1; letter-spacing: var(--tracking-wide);
+  border-radius: var(--radius-pill);
+  border: var(--border-thin) solid transparent;
+  white-space: nowrap;
+}
+.mm-badge--sm { height: 1.15rem; font-size: var(--text-2xs); padding-inline: 0.4rem; }
+.mm-badge__dot { width: 0.4rem; height: 0.4rem; border-radius: 50%; background: currentColor; }
+
+/* soft (default) tones */
+.mm-badge--neutral { background: var(--bg-subtle); color: var(--text-secondary); border-color: var(--border-subtle); }
+.mm-badge--accent  { background: var(--accent-soft); color: var(--accent-text); }
+.mm-badge--support { background: var(--support-soft); color: var(--support-text); }
+.mm-badge--success { background: var(--success-soft); color: var(--success-text); }
+.mm-badge--warning { background: var(--warning-soft); color: var(--warning-text); }
+.mm-badge--danger  { background: var(--danger-soft);  color: var(--danger-text); }
+
+/* solid */
+.mm-badge--solid.mm-badge--neutral { background: var(--stone-700); color: #fff; }
+.mm-badge--solid.mm-badge--accent  { background: var(--accent); color: var(--text-on-accent); }
+.mm-badge--solid.mm-badge--support { background: var(--support); color: #fff; }
+.mm-badge--solid.mm-badge--success { background: var(--success); color: #fff; }
+.mm-badge--solid.mm-badge--warning { background: var(--warning); color: #3a2e1f; }
+.mm-badge--solid.mm-badge--danger  { background: var(--danger); color: #fff; }
+
+/* ---------- Tag (chip) ---------- */
+.mm-tag {
+  display: inline-flex; align-items: center; gap: var(--space-1);
+  height: 1.65rem; padding-inline: var(--space-2) var(--space-2);
+  font-size: var(--text-xs); font-weight: var(--weight-medium);
+  color: var(--text-secondary);
+  background: var(--surface-card);
+  border: var(--border-thin) solid var(--border-default);
+  border-radius: var(--radius-sm);
+}
+.mm-tag--active { background: var(--accent-soft); color: var(--accent-text); border-color: var(--accent-border); }
+.mm-tag__x {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1rem; height: 1rem; margin-inline-end: -2px;
+  border: none; background: transparent; color: inherit;
+  border-radius: var(--radius-xs); cursor: pointer; opacity: 0.6;
+  transition: opacity var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out);
+}
+.mm-tag__x:hover { opacity: 1; background: rgb(var(--shadow-color) / 0.10); }
+.mm-tag__x svg { width: 0.7rem; height: 0.7rem; }
+
+/* ---------- Avatar ---------- */
+.mm-avatar {
+  position: relative; display: inline-flex; flex: none;
+  align-items: center; justify-content: center;
+  width: 2.5rem; height: 2.5rem;
+  border-radius: var(--radius-circle);
+  background: var(--accent-soft); color: var(--accent-text);
+  font-family: var(--font-sans); font-weight: var(--weight-semibold);
+  font-size: var(--text-sm); letter-spacing: var(--tracking-wide);
+  overflow: hidden; user-select: none;
+}
+.mm-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.mm-avatar--xs { width: 1.5rem; height: 1.5rem; font-size: var(--text-2xs); }
+.mm-avatar--sm { width: 2rem; height: 2rem; font-size: var(--text-xs); }
+.mm-avatar--lg { width: 3.25rem; height: 3.25rem; font-size: var(--text-lg); }
+.mm-avatar--xl { width: 4.5rem; height: 4.5rem; font-size: var(--text-2xl); }
+.mm-avatar--square { border-radius: var(--radius-lg); }
+.mm-avatar__status {
+  position: absolute; right: 0; bottom: 0;
+  width: 28%; height: 28%; min-width: 8px; min-height: 8px;
+  border-radius: 50%; border: 2px solid var(--surface-card);
+  background: var(--text-faint);
+}
+.mm-avatar__status--online { background: var(--success); }
+.mm-avatar__status--busy { background: var(--danger); }
+.mm-avatar__status--away { background: var(--warning); }
+
+.mm-avatar-group { display: inline-flex; }
+.mm-avatar-group > .mm-avatar { box-shadow: 0 0 0 2px var(--surface-card); margin-inline-start: -0.6rem; }
+.mm-avatar-group > .mm-avatar:first-child { margin-inline-start: 0; }

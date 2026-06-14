@@ -1,0 +1,14 @@
+/* ============================================================
+   Webfonts — Mojtaba Masoudinejad Design System
+   A serious, all-sans system.
+
+   Display : Schibsted Grotesque  (clean, architectural, authoritative)
+   Sans    : Hanken Grotesk       (neutral, readable workhorse)
+   Mono    : JetBrains Mono       (scientific / data / code accents)
+
+   NOTE: These are loaded from Google Fonts over the network. For
+   fully offline use, self-host the .woff2 files and replace this
+   @import with local @font-face rules. (Flagged to the owner.)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..700&family=Hanken+Grotesk:ital,wght@0,300..800;1,400..600&family=JetBrains+Mono:wght@400..700&display=swap');

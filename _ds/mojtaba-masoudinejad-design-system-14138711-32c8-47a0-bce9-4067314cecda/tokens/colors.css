@@ -1,0 +1,167 @@
+/* ============================================================
+   COLORS — Mojtaba Masoudinejad Design System
+   A calm, scientific palette: cool off-white paper, neutral
+   slate greys, a confident teal-blue "ocean" primary, and a
+   quiet "moss" green for support — serious and trustworthy.
+
+   Structure:
+     1. Raw ramps        (theme-independent reference values)
+     2. Semantic aliases (:root = LIGHT)
+     3. Dark overrides   ([data-theme="dark"])
+   Use the SEMANTIC tokens in product code, not raw ramps.
+   ============================================================ */
+
+:root {
+  /* ---- Paper: cool off-white backgrounds ---- */
+  --paper-0:   #ffffff;
+  --paper-50:  #f8f9fb;
+  --paper-100: #eef1f5;
+  --paper-200: #e3e8ed;
+
+  /* ---- Slate: neutral greys (borders → ink) ---- */
+  --stone-50:  #f1f3f6;
+  --stone-100: #e4e8ed;
+  --stone-200: #cfd6de;
+  --stone-300: #b2bcc7;
+  --stone-400: #8a95a2;
+  --stone-500: #67717f;
+  --stone-600: #4b5563;
+  --stone-700: #36404e;
+  --stone-800: #232b36;
+  --stone-900: #151b24;
+
+  /* ---- Ocean: teal-blue primary ---- */
+  --ocean-50:  #ecf3f8;
+  --ocean-100: #d3e5f0;
+  --ocean-200: #a7cce0;
+  --ocean-300: #71afcd;
+  --ocean-400: #4290b3;
+  --ocean-500: #2a6f93;
+  --ocean-600: #225a79;
+  --ocean-700: #1e4a63;
+  --ocean-800: #1b3d52;
+  --ocean-900: #173243;
+
+  /* ---- Moss: calm green support ---- */
+  --moss-50:  #eef3ec;
+  --moss-100: #dae7d2;
+  --moss-200: #bcd2af;
+  --moss-300: #95b784;
+  --moss-400: #6f9a5c;
+  --moss-500: #537d41;
+  --moss-600: #426534;
+  --moss-700: #38532c;
+  --moss-800: #2f4526;
+  --moss-900: #263820;
+
+  /* ---- Semantic status ramps ---- */
+  --green-100: #d8ecda; --green-500: #41865a; --green-600: #336c48;
+  --amber-100: #f6e8c6; --amber-500: #c68a2c; --amber-600: #a06f1f;
+  --red-100:   #f4d8d3; --red-500:   #cb4f3f; --red-600:   #a83c2e;
+
+  /* ---- Shadow tint (cool slate, not black) ---- */
+  --shadow-color: 22 28 36;
+}
+
+/* ============================================================
+   2. LIGHT — semantic aliases (default)
+   ============================================================ */
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Surfaces & backgrounds */
+  --bg-app:        var(--paper-50);
+  --bg-subtle:     var(--paper-100);
+  --bg-sunken:     var(--paper-200);
+  --surface-card:  var(--paper-0);
+  --surface-raised:var(--paper-0);
+  --surface-overlay: var(--paper-0);
+  --surface-inset: var(--paper-100);
+
+  /* Borders */
+  --border-subtle:  var(--stone-100);
+  --border-default: var(--stone-200);
+  --border-strong:  var(--stone-300);
+
+  /* Text */
+  --text-primary:   var(--stone-900);
+  --text-secondary: var(--stone-600);
+  --text-muted:     var(--stone-500);
+  --text-faint:     var(--stone-400);
+  --text-on-accent: #ffffff;
+  --text-link:      var(--ocean-600);
+
+  /* Primary accent (ocean) */
+  --accent:         var(--ocean-500);
+  --accent-hover:   var(--ocean-600);
+  --accent-active:  var(--ocean-700);
+  --accent-soft:    var(--ocean-50);
+  --accent-soft-hover: var(--ocean-100);
+  --accent-border:  var(--ocean-200);
+  --accent-text:    var(--ocean-700);
+  --accent-ring:    rgb(42 111 147 / 0.38);
+
+  /* Support accent (moss) */
+  --support:        var(--moss-500);
+  --support-soft:   var(--moss-50);
+  --support-text:   var(--moss-700);
+
+  /* Status */
+  --success: var(--green-500); --success-soft: var(--green-100); --success-text: var(--green-600);
+  --warning: var(--amber-500); --warning-soft: var(--amber-100); --warning-text: var(--amber-600);
+  --danger:  var(--red-500);   --danger-soft:  var(--red-100);   --danger-text:  var(--red-600);
+
+  /* Misc */
+  --selection-bg: var(--ocean-100);
+}
+
+/* ============================================================
+   3. DARK — cool charcoal, never pure black
+   ============================================================ */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg-app:        #14181d;
+  --bg-subtle:     #1b2026;
+  --bg-sunken:     #0f1317;
+  --surface-card:  #1d232a;
+  --surface-raised:#242b33;
+  --surface-overlay:#242b33;
+  --surface-inset: #181d23;
+
+  --border-subtle:  #2a313a;
+  --border-default: #38414c;
+  --border-strong:  #4b5663;
+
+  --text-primary:   #eef1f4;
+  --text-secondary: #b7c0cb;
+  --text-muted:     #8893a0;
+  --text-faint:     #5f6b78;
+  --text-on-accent: #ffffff;
+  --text-link:      var(--ocean-300);
+
+  --accent:         var(--ocean-400);
+  --accent-hover:   var(--ocean-300);
+  --accent-active:  var(--ocean-200);
+  --accent-soft:    rgb(42 111 147 / 0.16);
+  --accent-soft-hover: rgb(42 111 147 / 0.24);
+  --accent-border:  rgb(66 144 179 / 0.38);
+  --accent-text:    var(--ocean-300);
+  --accent-ring:    rgb(66 144 179 / 0.50);
+
+  --support:        var(--moss-400);
+  --support-soft:   rgb(83 125 65 / 0.18);
+  --support-text:   var(--moss-300);
+
+  --success: #5fa06f; --success-soft: rgb(65 134 90 / 0.18); --success-text: #8cc299;
+  --warning: #d9a449; --warning-soft: rgb(198 138 44 / 0.18); --warning-text: #e6c178;
+  --danger:  #df6857; --danger-soft:  rgb(203 79 63 / 0.18);  --danger-text:  #ec8c7c;
+
+  --selection-bg: rgb(66 144 179 / 0.30);
+  --shadow-color: 0 0 0;
+}
+
+/* OS preference is honoured at runtime by the ThemeToggle component, which
+   reads `prefers-color-scheme` on first load and sets `data-theme` on <html>.
+   (Kept out of CSS so all theme tokens live under :root / [data-theme] scopes.) */

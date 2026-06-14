@@ -1,0 +1,109 @@
+/* ============ KONAR VIDEO KIT — styles ============ */
+.vApp { height: 100%; overflow-y: auto; background: var(--bg-0); }
+
+/* shared button vocabulary (same as marketing) */
+.kBtn { font-family: var(--font-body); font-weight: 600; font-size: 15px; line-height: 1; border-radius: var(--r-md);
+  padding: 12px 18px; border: 1px solid transparent; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+  transition: all var(--dur) var(--ease); white-space: nowrap; }
+.kBtn-primary { background: var(--leaf); color: var(--on-accent); }
+.kBtn-primary:hover { background: var(--leaf-bright); box-shadow: var(--glow-leaf); }
+.kBtn:active { transform: scale(.98); }
+.kDot { width: 3px; height: 3px; border-radius: 50%; background: var(--fg-4); display: inline-block; }
+
+/* top bar */
+.vTop { display: flex; align-items: center; gap: 16px; padding: 14px 26px; border-bottom: 1px solid var(--line-1);
+  position: sticky; top: 0; background: rgba(20,18,14,.8); backdrop-filter: blur(14px); z-index: 30; }
+.vTop-brand { display: flex; }
+.vTop-crumb { color: var(--fg-3); font-size: 14px; display: flex; align-items: center; gap: 8px; }
+.vTop-crumb strong { color: var(--fg-2); font-weight: 500; }
+.vTop-right { margin-left: auto; display: flex; align-items: center; gap: 14px; }
+.vTop-streak { display: inline-flex; align-items: center; gap: 6px; color: var(--amber); font-size: 14px; font-weight: 600; }
+.vAvatar { width: 32px; height: 32px; border-radius: 50%; background: var(--bg-3); border: 1px solid var(--line-2); color: var(--fg-2); display: flex; align-items: center; justify-content: center; }
+
+/* layout */
+.vMain { max-width: 1240px; margin: 0 auto; padding: 28px; display: grid; grid-template-columns: 1fr 340px; gap: 28px; align-items: start; }
+
+/* ---- player ---- */
+.vPlayer { border-radius: var(--r-xl); overflow: hidden; border: 1px solid var(--line-2); background: var(--bg-1); box-shadow: var(--shadow-lg); }
+.vStage { position: relative; aspect-ratio: 16 / 10; background:
+  radial-gradient(120% 90% at 50% 30%, #1b1812 0%, #14120E 70%); cursor: pointer; overflow: hidden; }
+.vScene { position: absolute; inset: 0; padding: 24px 30px; }
+.vScene .vNode { transition: stroke var(--dur); }
+.vScene .is-playing .vNode { animation: vBreathe 2.4s var(--ease-in-out) infinite; }
+@keyframes vBreathe { 0%,100% { opacity: .85; } 50% { opacity: 1; } }
+.vTitleOverlay { position: absolute; left: 30px; top: 26px; right: 30px; pointer-events: none;
+  text-shadow: 0 2px 18px rgba(0,0,0,.6); }
+.vTitle { font-size: clamp(1.3rem, 2.4vw, 1.9rem); margin: 8px 0 0; max-width: 18em; }
+.vBigPlay { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 84px; height: 84px;
+  border-radius: 50%; border: 1px solid var(--leaf-dim); background: rgba(20,18,14,.62); backdrop-filter: blur(6px);
+  color: var(--leaf-bright); display: flex; align-items: center; justify-content: center; cursor: pointer;
+  box-shadow: var(--glow-leaf); transition: all var(--dur) var(--ease); padding-left: 6px; }
+.vBigPlay:hover { transform: translate(-50%, -50%) scale(1.06); background: rgba(20,18,14,.78); }
+
+/* control bar */
+.vControls { padding: 14px 18px 16px; background: var(--bg-1); border-top: 1px solid var(--line-1); }
+.vBar { position: relative; height: 6px; background: var(--bg-3); border-radius: var(--r-full); cursor: pointer; margin: 8px 6px 16px; }
+.vBar-fill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--leaf); border-radius: var(--r-full); }
+.vBar-knob { position: absolute; top: 50%; width: 14px; height: 14px; border-radius: 50%; background: var(--leaf-bright);
+  transform: translate(-50%, -50%); box-shadow: var(--glow-leaf); }
+.vBar-tick { position: absolute; top: 50%; width: 2px; height: 10px; background: var(--bg-0); transform: translate(-50%, -50%); border-radius: 1px; }
+.vRow { display: flex; align-items: center; gap: 6px; }
+.vCtrl { background: none; border: none; color: var(--fg-2); cursor: pointer; padding: 7px; border-radius: var(--r-sm); display: flex; transition: all var(--dur-fast) var(--ease); }
+.vCtrl:hover { color: var(--fg-1); background: var(--bg-2); }
+.vTime { font-family: var(--font-mono); font-size: 13px; color: var(--fg-3); margin-left: 6px; }
+.vTime-sep { color: var(--fg-4); }
+.vSpacer { flex: 1; }
+.vChip { background: var(--bg-2); border: 1px solid var(--line-2); color: var(--fg-2); font-family: var(--font-mono);
+  font-size: 12.5px; padding: 5px 10px; border-radius: var(--r-sm); cursor: pointer; }
+.vChip:hover { color: var(--fg-1); border-color: var(--line-3); }
+
+/* under-player lesson meta */
+.vMeta { margin-top: 22px; }
+.vMeta-head { display: flex; align-items: center; gap: 14px; }
+.vMeta-instr { display: flex; align-items: center; gap: 10px; }
+.vMeta-avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--leaf-wash); border: 1px solid var(--leaf-dim);
+  color: var(--leaf-bright); display: flex; align-items: center; justify-content: center; }
+.vMeta-instrName { font-weight: 600; color: var(--fg-1); font-size: 14.5px; }
+.vMeta-instrRole { font-size: 13px; color: var(--fg-3); }
+.vMeta-stats { margin-left: auto; display: flex; gap: 16px; color: var(--fg-3); font-size: 14px; }
+.vMeta-stats span { display: inline-flex; align-items: center; gap: 6px; }
+.vMeta-desc { color: var(--fg-2); font-size: 1.05rem; line-height: 1.65; margin: 18px 0 0; }
+.vMeta-tokens { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+.vTokenChip { font-family: var(--font-mono); font-size: 13px; padding: 4px 10px; border-radius: var(--r-sm);
+  background: var(--amber-wash); color: var(--amber); border: 1px solid var(--line-2); }
+
+/* ---- right rail ---- */
+.vRail { display: flex; flex-direction: column; gap: 22px; position: sticky; top: 92px; }
+.vRail-prog { background: var(--bg-1); border: 1px solid var(--line-2); border-radius: var(--r-lg); padding: 18px; }
+.vRail-progTop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.vRail-streak { display: inline-flex; align-items: center; gap: 7px; color: var(--amber); font-size: 14px; }
+.vRail-streak strong { font-weight: 700; }
+.vRail-mastered { display: inline-flex; align-items: center; gap: 6px; color: var(--leaf-bright); font-size: 14px; font-weight: 600; }
+.vRail-track { height: 7px; background: var(--bg-3); border-radius: var(--r-full); overflow: hidden; }
+.vRail-trackFill { height: 100%; background: linear-gradient(90deg, var(--leaf-dim), var(--leaf)); border-radius: var(--r-full); }
+.vRail-progLabel { font-size: 13px; color: var(--fg-3); margin-top: 10px; }
+
+.vRail-section { background: var(--bg-1); border: 1px solid var(--line-2); border-radius: var(--r-lg); padding: 16px 16px 18px; }
+.vRail-h { font-family: var(--font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--fg-3); margin: 2px 4px 12px; }
+.vRail-chapters { display: flex; flex-direction: column; gap: 2px; }
+.vChap { display: flex; align-items: center; gap: 12px; padding: 9px 10px; border-radius: var(--r-sm); background: none; border: none;
+  cursor: pointer; text-align: left; color: var(--fg-2); transition: all var(--dur-fast) var(--ease); width: 100%; }
+.vChap:hover { background: var(--bg-2); }
+.vChap.is-active { background: var(--leaf-wash); }
+.vChap.is-active .vChap-label { color: var(--leaf-bright); font-weight: 500; }
+.vChap-time { font-family: var(--font-mono); font-size: 12px; color: var(--fg-4); flex: none; width: 34px; }
+.vChap-label { font-size: 14px; }
+.vChap-done { color: var(--leaf); margin-left: auto; flex: none; }
+
+.vNext { display: flex; align-items: center; gap: 12px; padding: 8px; border-radius: var(--r-md); transition: all var(--dur) var(--ease); }
+.vNext:hover { background: var(--bg-2); text-decoration: none; }
+.vNext-thumb { width: 56px; height: 44px; border-radius: var(--r-sm); background: var(--bg-inset); border: 1px solid var(--line-2);
+  display: flex; align-items: center; justify-content: center; color: var(--dusk); flex: none; }
+.vNext-body { display: flex; flex-direction: column; gap: 3px; }
+.vNext-title { font-weight: 600; color: var(--fg-1); font-size: 14.5px; }
+.vNext-meta { font-size: 12.5px; color: var(--fg-3); }
+
+@media (max-width: 980px) {
+  .vMain { grid-template-columns: 1fr; }
+  .vRail { position: static; }
+}
